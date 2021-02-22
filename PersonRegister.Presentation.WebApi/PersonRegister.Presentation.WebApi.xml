@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PersonRegister.Presentation.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:PersonRegister.Presentation.WebApi.Controllers.ReportsController.GetPeopleRelations">
+            <summary>
+            აბრუნებს დაკავშირებული პირების რაოდენობას ფიზიკური პირებისთვის კავშირის ტიპის მიხედვით.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PersonRegister.WebApi.Controllers.PeopleController.Create(PersonRegister.Core.Application.Requests.Commands.AddPersonRequest)">
+            <summary>
+            ამატებს ახალ ფიზიკურ პირს.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PersonRegister.WebApi.Controllers.PeopleController.Update(PersonRegister.Core.Application.Requests.Commands.UpdatePersonRequest)">
+            <summary>
+            ანახლებს ფიზიკური პირის მონაცემებს.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PersonRegister.WebApi.Controllers.PeopleController.Delete(System.Int32)">
+            <summary>
+            შლის ფიზიკურ პირს.
+            </summary>
+            <param name="id">ფიზიკური პირის Id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PersonRegister.WebApi.Controllers.PeopleController.AddRelatedPerson(PersonRegister.Core.Application.Requests.Commands.AddRelatedPersonRequest)">
+            <summary>
+            ფიზიკური პირზე ამატებს დაკავშირებულ (ბაზაში უკვე არსებულ) პირს .
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PersonRegister.WebApi.Controllers.PeopleController.AddNewRelatedPerson(PersonRegister.Core.Application.Requests.Commands.AddNewRelatedPersonRequest)">
+            <summary>
+            ფიზიკური პირზე ამატებს დაკავშირებულ (ახალ) პირს. მას შემდეგ რაც შექმნის ამ პირს ბაზაში.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PersonRegister.WebApi.Controllers.PeopleController.DeleteRelatedPerson(PersonRegister.Core.Application.Requests.Commands.DeleteRelatedPersonRequest)">
+            <summary>
+            შლის დაკავშირებულ პირთან კავშირს.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PersonRegister.WebApi.Controllers.PeopleController.Get(System.Int32)">
+            <summary>
+            აბრუნებს ფიზიკურ პირს.
+            </summary>
+            <param name="id">ფიზიკური პირის Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:PersonRegister.WebApi.Controllers.PeopleController.Get(PersonRegister.Core.Application.RequestsParameter.Filtering.PeopleFilter,PersonRegister.Core.Application.RequestsParameter.Paging.PageRequest)">
+            <summary>
+            აბრუნებს ფიზიკურ პირებს.
+            </summary>
+            <param name="peopleFilter">ფიზიკური პირის გასაფილტრი ველები</param>
+            <param name="pageRequest">დასაბრუნებელი სიის გვერის ნომერი და გვერდის ზომა</param>
+            <returns></returns>
+        </member>
+        <member name="M:PersonRegister.WebApi.Controllers.PeopleController.AddPhoto(PersonRegister.Core.Application.Requests.Commands.UploadPhotoRequest)">
+            <summary>
+            ინახავს ფიზიკური პირის ფოტოს.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
